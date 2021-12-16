@@ -1,4 +1,4 @@
-package vismanet_test
+package winbooks_test
 
 import (
 	"log"
@@ -6,11 +6,11 @@ import (
 	"os"
 	"testing"
 
-	vismanet "github.com/omniboost/go-visma.net"
+	winbooks "github.com/omniboost/go-winbooks-web"
 )
 
 var (
-	client *vismanet.Client
+	client *winbooks.Client
 )
 
 func TestMain(m *testing.M) {
@@ -20,7 +20,7 @@ func TestMain(m *testing.M) {
 	applicationType := os.Getenv("APPLICATION_TYPE")
 	debug := os.Getenv("DEBUG")
 
-	client = vismanet.NewClient(nil, accessToken, companyID, applicationType)
+	client = winbooks.NewClient(nil, accessToken, companyID, applicationType)
 	if debug != "" {
 		client.SetDebug(true)
 	}

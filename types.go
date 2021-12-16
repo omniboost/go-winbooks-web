@@ -1,11 +1,11 @@
-package vismanet
+package winbooks
 
 import (
 	"encoding/json"
 	"time"
 
 	"github.com/cydev/zero"
-	"github.com/omniboost/go-visma.net/omitempty"
+	"github.com/omniboost/go-winbooks-web/omitempty"
 )
 
 type Accounts []Account
@@ -623,7 +623,7 @@ type CustomerPostBody struct {
 	// 	AttributeID    ValueString `json:"attributeId"`
 	// 	AttributeValue ValueString `json:"attributeValue"`
 	// } `json:"attributeLines"`
-	// OverrideNumberSeries ValueBool `json:"overrideNumberSeries"`
+	OverrideNumberSeries ValueBool `json:"overrideNumberSeries"`
 }
 
 func (r CustomerPostBody) MarshalJSON() ([]byte, error) {

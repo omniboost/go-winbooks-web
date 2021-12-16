@@ -1,4 +1,4 @@
-package vismanet_test
+package winbooks_test
 
 import (
 	"encoding/json"

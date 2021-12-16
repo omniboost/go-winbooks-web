@@ -1,4 +1,4 @@
-package vismanet
+package winbooks
 
 import "net/url"
 

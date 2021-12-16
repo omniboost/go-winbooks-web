@@ -1,4 +1,4 @@
-package vismanet_test
+package winbooks_test
 
 import (
 	"encoding/json"
@@ -8,7 +8,7 @@ import (
 
 func TestCustomerInvoiceGet(t *testing.T) {
 	req := client.NewCustomerInvoiceGet()
-	req.PathParams().InvoiceNumber = "RBB202151765"
+	req.PathParams().InvoiceNumber = "02M20229"
 	resp, err := req.Do()
 	if err != nil {
 		t.Error(err)

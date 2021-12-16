@@ -1,4 +1,4 @@
-module github.com/omniboost/go-visma.net
+module github.com/omniboost/go-winbooks-web
 
 go 1.16
 

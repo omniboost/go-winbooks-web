@@ -1,10 +1,10 @@
-package vismanet
+package winbooks
 
 import (
 	"net/http"
 	"net/url"
 
-	"github.com/omniboost/go-visma.net/utils"
+	"github.com/omniboost/go-winbooks-web/utils"
 )
 
 func (c *Client) NewCustomerCreditNoteGetAll() CustomerCreditNoteGetAll {
